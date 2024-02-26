@@ -1,4 +1,4 @@
 tensorflow
-tensorrt
+tensorrt==8.6.1.post1+cu117-cp39-linux_x86_64.whl
 streamlit_image_comparison
 streamlit_lottie
