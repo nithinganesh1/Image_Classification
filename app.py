@@ -26,7 +26,7 @@ face = load_lottieurl("https://github.com/nithinganesh1/Image_Classification/raw
 #downlad model from github
 def load_model():
     model = "image_classifier_models.h5"
-    if not os.path.isfile(trained_model_path):
+    if not os.path.isfile(model):
         download_url = "https://github.com/nithinganesh1/Image_Classification/raw/main/image_classifier_models/image_classifier_models.h5"
         download_file(download_url, trained_model_path)
         model = keras_models.load_model(trained_model_path)
