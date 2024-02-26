@@ -9,6 +9,7 @@ import streamlit as st
 from streamlit_image_comparison import image_comparison
 from streamlit_lottie import st_lottie
 
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 #page_title and icons
 st.set_page_config(layout="wide", page_title="Happy-Sad Classifier", page_icon="😊😔")
 
