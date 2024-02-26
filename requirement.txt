@@ -1,3 +1,0 @@
-tensorflow
-streamlit_image_comparison
-streamlit_lottie
