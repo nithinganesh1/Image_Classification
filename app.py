@@ -28,9 +28,8 @@ def load_model():
     model = "image_classifier_models.h5"
     if not os.path.isfile(model):
         download_url = "https://github.com/nithinganesh1/Image_Classification/raw/main/image_classifier_models/image_classifier_models.h5"
-        download_file(download_url, trained_model_path)
-        model = keras_models.load_model(trained_model_path)
-    return model
+        download_file(download_url, model)
+    return keras_models.load_model(model)
 
 trained_model = load_model()
 
