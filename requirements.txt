@@ -1,4 +1,4 @@
 tensorflow
-TensorRT
+tensorrt
 streamlit_image_comparison
 streamlit_lottie
