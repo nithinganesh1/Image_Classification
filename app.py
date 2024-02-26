@@ -2,7 +2,7 @@ import os
 import numpy as np
 import tensorflow as tf
 
-import pickle
+import tensorflow.keras.models as keras_models
 from PIL import Image
 import requests
 import streamlit as st
@@ -29,7 +29,8 @@ def load_model():
     if not os.path.isfile(trained_model_path):
         download_url = "https://github.com/nithinganesh1/Image_Classification/raw/main/image_classifier_models/image_classifier_models.h5"
         download_file(download_url, trained_model_path)
-    return pickle.load(open(trained_model_path, 'rb'))
+        model = keras_models.load_model(trained_model_path)
+    return model
 
 trained_model = load_model()
 
