@@ -6,7 +6,6 @@ import tensorflow.keras.models as keras_models
 from PIL import Image
 import requests
 import streamlit as st
-from streamlit_image_comparison import image_comparison
 from streamlit_lottie import st_lottie
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
@@ -78,13 +77,14 @@ def main():
 
         st.write("### Sample Images")
         with st.container():
-        st.write("---")
-        left_column, right_column = st.columns(2)
-        with left_column:
-            ![sadimg (1)](https://github.com/nithinganesh1/Image_Classification/assets/122164879/f4833327-536a-409a-9170-774c43ca43c6)
-        with right_column:
-            img2=![happy image](https://github.com/nithinganesh1/Image_Classification/assets/122164879/c278bcb4-a67f-4452-b521-abe5cb7d416b)
-                )
+            st.write("---")
+            left_column, right_column = st.columns(2)
+            with left_column:
+                ![sadimg (1)](https://github.com/nithinganesh1/Image_Classification/assets/122164879/f4833327-536a-409a-9170-774c43ca43c6)
+              with right_column:
+                img2=![happy image](https://github.com/nithinganesh1/Image_Classification/assets/122164879/c278bcb4-a67f-4452-b521-abe5cb7d416b)
+                
+        
     # Get the input data from the user
     uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
     image = ""   
