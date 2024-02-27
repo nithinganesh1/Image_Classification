@@ -81,7 +81,7 @@ def main():
             left_column, right_column = st.columns(2)
             with left_column:
                 st.image("sadimg.jpg", width=250)
-              with right_column:
+            with right_column:
                 st.image("happy image.jpg",width=250)
                 
         
