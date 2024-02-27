@@ -59,7 +59,7 @@ def main():
 
     with st.container():
         st.write("---")
-        left_column, right_column = st.columns(2)
+        left_column, right_column,column_3 = st.columns(3)
         with right_column:
             st.write("##")
             st.write("""
@@ -77,11 +77,13 @@ def main():
             st_lottie(face,speed=1,reverse=False,loop=True,quality="low",height=None,width=200,key=None)
 
         st.write("### Sample Images")
-        image_comparison(
-                img1=![sadimg (1)](https://github.com/nithinganesh1/Image_Classification/assets/122164879/f4833327-536a-409a-9170-774c43ca43c6)
-                img2=![happy image](https://github.com/nithinganesh1/Image_Classification/assets/122164879/c278bcb4-a67f-4452-b521-abe5cb7d416b)
-                label1="sad",
-                label2="happy"
+        with st.container():
+        st.write("---")
+        left_column, right_column = st.columns(2)
+        with left_column:
+            ![sadimg (1)](https://github.com/nithinganesh1/Image_Classification/assets/122164879/f4833327-536a-409a-9170-774c43ca43c6)
+        with right_column:
+            img2=![happy image](https://github.com/nithinganesh1/Image_Classification/assets/122164879/c278bcb4-a67f-4452-b521-abe5cb7d416b)
                 )
     # Get the input data from the user
     uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
