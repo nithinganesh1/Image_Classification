@@ -33,16 +33,17 @@ def load_model():
 
 trained_model = load_model()
 
-def input_image_setup(img):
-    if img is not None:
-        # Read the file into bytes
-        resize = tf.image.resize(img, (256,256))
-        final_data = np.expand_dims(resize/255, 0)
 
+def input_image_setup(uploaded_file):
+    if uploaded_file is not None:
+        image_data = uploaded_file.getvalue() 
+        img = tf.image.decode_image(image_data, channels=3) 
+        resize = tf.image.resize(img, (256, 256))
+        final_data = np.expand_dims(resize / 255, 0)
         return final_data
-    
     else:
         raise FileNotFoundError("No file uploaded")
+
 
     
 def predict_img(final_data):
