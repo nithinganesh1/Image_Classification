@@ -90,7 +90,6 @@ def main():
                 st.image("sadimg2.jpg",width=350)
         
     # Get the input data from the user
-    uploaded_file = None
     uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
     image = ""   
 
@@ -100,13 +99,14 @@ def main():
 
     submit=st.button("Check Emotion")
 
-    if submit and uploaded_file is None:
-        st.write("#### !Please check emotions only after uploading an image.")
-    else:
-        final_data = input_image_setup(uploaded_file)
-        prediction = predict_img(final_data)
-        st.subheader("The emotion is")
-        st.write(prediction)
+    if submit:
+        if uploaded_file is None:
+            st.warning("Please upload an image to predict the emotion.")
+        else:
+            final_data = input_image_setup(uploaded_file)
+            prediction = predict_img(final_data)
+            st.subheader("The emotion is")
+            st.write(prediction)
 
 if __name__ == '__main__':
     main()
