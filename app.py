@@ -63,13 +63,13 @@ def main():
         with right_column:
             st.write("##")
             st.write("""Use the Happy-Sad People Image Classifier by following these steps: 
-             1. Download an image of a person displaying a happy or sad emotion from Google, or use your own image
-             2. Click on the 'Upload' button to upload the selected image.
-             3. The model will then analyze the image and predict whether the person in the image is happy or sad.
+             - Download an image of a person displaying a happy or sad emotion from Google, or use your own image
+             - Click on the 'Upload' button to upload the selected image.
+             - The model will then analyze the image and predict whether the person in the image is happy or sad.
              """)
             
         with left_column:
-            st_lottie(face,speed=1,reverse=False,loop=True,quality="low",height=None,width=800,key=None)
+            st_lottie(face,speed=1,reverse=False,loop=True,quality="low",height=None,width=200,key=None)
 
         st.write("### Sample Images")
         image_comparison(
