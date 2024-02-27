@@ -83,7 +83,8 @@ def main():
                 st.image("sadimg.jpg", width=250)
             with right_column:
                 st.image("happy image.jpg",width=250)
-                
+    st.image("sadimg.jpg", width=250)
+    st.image("happy image.jpg",width=250)
         
     # Get the input data from the user
     uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
