@@ -99,9 +99,7 @@ def main():
 
     submit=st.button("Check Emotion")
 
-    if submit and uploaded_file is None:
-        st.write("! Please upload an image before proceeding.")
-    else:
+    if submit:
         final_data = input_image_setup(uploaded_file)
         prediction = predict_img(final_data)
         st.subheader("The emotion is")
