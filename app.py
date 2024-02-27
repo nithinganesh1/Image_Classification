@@ -78,13 +78,15 @@ def main():
         st.write("### Sample Images")
         with st.container():
             st.write("---")
-            left_column, right_column = st.columns(2)
-            with left_column:
-                st.image("sadimg.jpg", width=250)
-            with right_column:
-                st.image("happy image.jpg",width=250)
-    st.image("sadimg.jpg", width=250)
-    st.image("happy image.jpg",width=250)
+            c1, c2, c3, c4 = st.columns(4)
+            with c1:
+                st.image("sadimg.jpg", width=350)
+            with c2:
+                st.image("happy image.jpg",width=350)
+            with c3:
+                st.image("happyimg2.jpg",width=350)
+            with c4:
+                st.image("sadimg2.jpg",width=350)
         
     # Get the input data from the user
     uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
