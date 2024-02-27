@@ -78,8 +78,8 @@ def main():
 
         st.write("### Sample Images")
         image_comparison(
-                img1="<img src='https://raw.githubusercontent.com/nithinganesh1/Image_Classification/main/sadimg.jpg' alt='Sad Image'>",
-                img2="<img src='https://github.com/nithinganesh1/Image_Classification/blob/main/happy%20image.jpg' alt='Happy Image'>",
+                img1=![sadimg (1)](https://github.com/nithinganesh1/Image_Classification/assets/122164879/f4833327-536a-409a-9170-774c43ca43c6)
+                img2=![happy image](https://github.com/nithinganesh1/Image_Classification/assets/122164879/c278bcb4-a67f-4452-b521-abe5cb7d416b)
                 label1="sad",
                 label2="happy"
                 )
