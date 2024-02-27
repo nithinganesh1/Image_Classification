@@ -100,7 +100,7 @@ def main():
     submit=st.button("Check Emotion")
 
     if submit and uploaded_file is None:
-        st.error("! Please upload an image before proceeding.")
+        st.write("! Please upload an image before proceeding.")
     else:
         final_data = input_image_setup(uploaded_file)
         prediction = predict_img(final_data)
