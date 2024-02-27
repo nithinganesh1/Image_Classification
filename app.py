@@ -62,10 +62,15 @@ def main():
         left_column, right_column = st.columns(2)
         with right_column:
             st.write("##")
-            st.write("""Use the Happy-Sad People Image Classifier by following these steps: 
+            st.write("""
+            ### Use the Happy-Sad People Image Classifier by following these steps:
+            
              - Download an image of a person displaying a happy or sad emotion from Google, or use your own image
+             
              - Click on the 'Upload' button to upload the selected image.
+             
              - The model will then analyze the image and predict whether the person in the image is happy or sad.
+             
              """)
             
         with left_column:
