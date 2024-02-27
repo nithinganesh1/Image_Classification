@@ -80,9 +80,9 @@ def main():
             st.write("---")
             left_column, right_column = st.columns(2)
             with left_column:
-                ![sadimg (1)](https://github.com/nithinganesh1/Image_Classification/assets/122164879/f4833327-536a-409a-9170-774c43ca43c6)
+                st.image("sadimg.jpg", width=250)
               with right_column:
-                img2=![happy image](https://github.com/nithinganesh1/Image_Classification/assets/122164879/c278bcb4-a67f-4452-b521-abe5cb7d416b)
+                st.image("happy image.jpg",width=250)
                 
         
     # Get the input data from the user
