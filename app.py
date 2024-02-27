@@ -90,6 +90,7 @@ def main():
                 st.image("sadimg2.jpg",width=350)
         
     # Get the input data from the user
+    uploaded_file = None
     uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
     image = ""   
 
