@@ -92,3 +92,6 @@ def main():
         prediction = predict_img(final_data)
         st.subheader("The emotion is")
         st.write(prediction)
+
+if __name__ == '__main__':
+    main()
