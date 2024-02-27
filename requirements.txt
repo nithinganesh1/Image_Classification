@@ -1,4 +1,5 @@
-tensorflow
-nb_conda
+tensorflow == 2.15.0
+opencv-python == 4.9.0
+micropython-imghdr
 streamlit_image_comparison
 streamlit_lottie
